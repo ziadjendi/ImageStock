@@ -15,10 +15,12 @@ class ImagesController < ApplicationController
 
   # POST /images
   def create
-    @image = Image.new(image_params)
+    @media = params[:image_data]
+    
+    @image = Image.new(:media => @media)
 
     if @image.save
-      render json: @image, status: :created, location: @image
+      render json:  {id: @image._id.to_s}  , status: :created, location: @image
     else
       render json: @image.errors, status: :unprocessable_entity
     end
