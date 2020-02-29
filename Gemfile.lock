@@ -90,6 +90,7 @@ GEM
     factory_bot_rails (5.1.1)
       factory_bot (~> 5.1.0)
       railties (>= 4.2.0)
+    ffi (1.11.1)
     ffi (1.11.1-x64-mingw32)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -125,12 +126,15 @@ GEM
       mongoid (>= 3.0, < 8.0)
     mongoid_paranoia (0.4.0)
       mongoid (~> 7.0)
+    msgpack (1.3.1)
     msgpack (1.3.1-x64-mingw32)
     nio4r (2.5.2)
+    nokogiri (1.10.4)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.4-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.1)
-    puma (3.12.1)
+    puma (3.12.3)
     rack (2.0.7)
     rack-cors (1.0.3)
     rack-test (1.1.0)
@@ -201,6 +205,7 @@ GEM
     zeitwerk (2.1.10)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -212,7 +217,7 @@ DEPENDENCIES
   factory_bot_rails
   mini_magick
   mongoid_paranoia
-  puma (~> 3.11)
+  puma (~> 3.12)
   rack-cors
   rails (~> 6.0.0)
   rspec-rails (>= 3.5.0)
